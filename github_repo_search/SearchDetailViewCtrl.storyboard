@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="bZe-Lc-gEc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--Search Detail View Ctrl-->
+        <scene sceneID="d0N-1p-2jc">
+            <objects>
+                <viewController id="bZe-Lc-gEc" customClass="SearchDetailViewCtrl" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SsG-nT-e2E"/>
+                        <viewControllerLayoutGuide type="bottom" id="g7U-wv-DFe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zOO-zq-9Od">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iio-Fz-DIE">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="g7U-wv-DFe" firstAttribute="top" secondItem="iio-Fz-DIE" secondAttribute="bottom" id="3Ap-Fu-vuI"/>
+                            <constraint firstItem="iio-Fz-DIE" firstAttribute="leading" secondItem="zOO-zq-9Od" secondAttribute="leading" id="dzj-vw-ips"/>
+                            <constraint firstAttribute="trailing" secondItem="iio-Fz-DIE" secondAttribute="trailing" id="hJb-xL-mOu"/>
+                            <constraint firstItem="iio-Fz-DIE" firstAttribute="top" secondItem="zOO-zq-9Od" secondAttribute="top" id="hdN-EY-kfw"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="webView" destination="iio-Fz-DIE" id="brz-sZ-Msa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cIo-8m-h5T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="265" y="263"/>
+        </scene>
+    </scenes>
+</document>
